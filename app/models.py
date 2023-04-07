@@ -13,6 +13,7 @@ class Actor(models.Model):
     industry_name=models.ForeignKey(Industry,on_delete=models.CASCADE)
     actor_name=models.CharField(max_length=100)
     email=models.EmailField()
+
     def __str__(self):
         return self.actor_name
 
@@ -25,3 +26,10 @@ class Movie(models.Model):
     url=models.URLField()
     def __str__(self):
         return self.movie_name
+
+class Actor_DOB(models.Model):
+    actor_name=models.ForeignKey(Actor,on_delete=models.CASCADE)
+    date=models.DateField()
+    def __str__(self):
+        self.m='Object is created'
+        return self.m

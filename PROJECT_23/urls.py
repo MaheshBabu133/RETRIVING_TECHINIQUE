@@ -22,4 +22,9 @@ urlpatterns = [
     path('industry_table/',industry_table,name='industry_table'),
     path('actor_table/',actor_table,name='actor_table'),
     path('movie_table/',movie_table,name='movie_table'),
+    path('insert_IO/',insert_IO,name='insert_IO'),
+    path('insert_AO/',insert_AO,name='insert_AO'),
+    path('insert_MO/',insert_MO,name='insert_MO'),
+    path('actor_dob/',actor_dob,name='actor_dob'),
+    path('insert_date/',insert_date,name='insert_date'),
 ]
